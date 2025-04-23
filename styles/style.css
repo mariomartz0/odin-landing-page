@@ -47,3 +47,29 @@ body {
   */
   min-height: 100vh;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 128px;
+  background-color: var(--dark-bg-color);
+}
+
+.header-logo {
+  font-size: 24px;
+  color: var(--logo-text-color);
+}
+
+.header-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+.header-links a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--secondary-text-color);
+}
