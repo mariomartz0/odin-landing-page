@@ -1,0 +1,49 @@
+/* Importing Google Font for 'Roboto' since it is used in reference image. */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*
+  Turning color scheme into variables so it can optionally
+  be changed from here.
+*/
+:root {
+  --dark-bg-color: #1f2937;
+  --btn-bg-color: #3882f6;
+  --quote-bg-color: #e5e7eb;
+  --main-text-color: #f9faf8;
+  --secondary-text-color: #e5e7eb;
+  --logo-text-color: #f9faf8;
+  --info-header-text-color: #1f2937;
+  --quote-text-color: #1f2937;
+}
+
+/*
+  Reset to increase control over layout. 
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Setting default font properties for page. */
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  /*
+    Turning body into flexbox in order to stack sections
+    and attempt to recreate layout in reference image.
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* 
+    Making the body take up the entire viewport so that 
+    the layout flexes from the top to bottom of the page.
+  */
+  min-height: 100vh;
+}
