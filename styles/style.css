@@ -189,6 +189,11 @@ figure img {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: var(--main-text-color);
   min-height: 50px;
   background-color: var(--dark-bg-color);
 }
