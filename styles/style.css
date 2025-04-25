@@ -185,7 +185,37 @@ figure img {
 }
 
 .sub-section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--lr-padding);
   min-height: 250px;
+}
+
+.cta {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 64px;
+  border-radius: 5px;
+  background-color: var(--btn-bg-color);
+}
+
+.cta .cta-left {
+  color: var(--main-text-color);
+}
+
+.cta .cta-left p {
+  font-weight: 300;
+}
+
+.cta .cta-right button {
+  color: var(--secondary-text-color);
+  border: 1px solid var(--main-text-color);
+  padding: 4px 24px;
+  border-radius: 5px;
+  background-color: var(--btn-bg-color);
 }
 
 footer {
